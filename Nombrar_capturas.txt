@@ -1,4 +1,0 @@
-Get-ChildItem "\*" | ForEach-Object {
-    $fecha = $_.LastWriteTime.ToString("yyyy-MM-dd_HH-mm-ss")
-    Rename-Item $_ -NewName "AdriánCruzRecio-$fecha$($_.Extension)"
-}	
